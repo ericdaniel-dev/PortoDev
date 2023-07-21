@@ -1,13 +1,14 @@
 function Aboutme(){
 	return(
-		<div id="aboutmeBox" class="border-2 border-black h-auto">
-			<div id="aboutMe" class="flex items-center justify-center flex-col md:flex-row w-full h-auto p-3">
-				<div id="selfimage" class="border-2 border-black w-full md:w-1/4 h-auto mx-auto md:mx-0">
-					<img src="./src/assets/Self image.jpg" class="object-cover w-[400px] h-[400px] rounded-full transform scale-[0.7]" alt="self image"/>
+		<div id="aboutmeBox" className="w-full h-auto p-2">
+			<div id="aboutMe" className="shadow-xl flex items-center justify-center flex-col md:flex-row w-full h-auto p-3">
+				<div id="selfimage" className="w-full md:w-1/4 h-auto mx-auto md:mx-0">
+					<img src="./src/assets/Self image.jpg" className="object-cover w-full h-full rounded-full transform scale-[0.7]" alt="self image"/>
 				</div>
-				<div id="aboutmyself" class="border-2 border-black w-full md:w-1/2 p-8 h-auto">
-					<p>
-						  My name is John Doe, and I am a junior developer
+				<div id="aboutmyself" className="border-2 border-gray-400 rounded-lg w-full md:w-1/2 p-8 h-auto">
+					<h3 className="text-xl font-semibold">About Me</h3>
+					<p className="p-2">
+						  My name is Eric, and I am a junior developer
 						with a passion for programming and creating innovative
 						solutions. I am also a UI/UX developer, specializing in
 						designing user-friendly interfaces that provide seamless user
