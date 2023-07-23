@@ -32,7 +32,7 @@ function SoftskillComponent(){
 		<div id="softskillbar" className="w-full grid gap-x-2 gap-y-2 grid-cols-1 md:grid-cols-2">
 			{softskills.map((item, index) =>(
 				<div id="SkillCard" className="flex flex-col justify-center items-center w-full h-52 border-2 border-black" key={item}>
-					<h5 className="text-xl text-center p-3">{item[0]}</h5>
+					<h4 className="text-xl text-center p-3">{item[0]}</h4>
 					<p className="p-3">{item[1]}</p>
 				</div>
 				))}
@@ -43,15 +43,15 @@ function SoftskillComponent(){
 
 function MySkills(){
 	return(
-		<div id="myskillBox" className="w-full p-3">
-			<h3 className="text-xl font-semibold">Skills</h3>
+		<div id="myskillBox" className="w-full p-3 shadow-sm shadow-black">
+			<h2 className="text-xl font-semibold">Skills</h2>
 			<div id="skills" className="p-3 flex justify-around h-auto gap-2 flex-col md:flex-row">
 				<div id="techstack" className="flex-1 rounded-xl h-auto w-full md:w-1/3 p-3 flex flex-col">
-					<h4 className="text-2xl">Tech Stack</h4>
+					<h3 className="text-2xl">Tech Stack</h3>
 					<SkillComponent/>
 				</div>
 				<div id="softskills" className="border-2 border-black rounded-xl h-auto w-full md:w-3/5 p-3 flex flex-col">
-					<h4 className="text-2xl">Soft Skill</h4>
+					<h3 className="text-2xl">Soft Skill</h3>
 					<div id="SoftskillBox">
 						<SoftskillComponent/>
 					</div>
